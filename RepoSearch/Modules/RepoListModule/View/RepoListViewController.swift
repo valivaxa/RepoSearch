@@ -49,6 +49,7 @@ class RepoListViewController: UIViewController {
         searchController.searchBar.placeholder = "Repository Search"
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
 
         tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil),
